@@ -1,6 +1,6 @@
 Name:           cgicc
 Version:        3.2.16
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        ANSI C++ library for CGI applications
 
 License:        LGPL
@@ -36,6 +36,14 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 
+%package        doc
+Summary:        Documentations files for %{name}
+
+%description    doc
+The %{name}-doc package contains the documentations for
+developing applications that use %{name}.
+
+
 %prep
 %autosetup
 
@@ -66,11 +74,15 @@ mv $RPM_BUILD_ROOT/usr/doc/%{name}-%{version} $RPM_BUILD_ROOT/usr/share/doc/%{na
 %files devel
 %{_includedir}/*
 %{_libdir}/*.so
-%{_docdir}/*
 %{_libdir}/pkgconfig/cgicc.pc
 %{_datarootdir}/aclocal/cgicc.m4
 
+%files doc
+%{_docdir}/*
 
 %changelog
+* Tue Sep 18 2018 Emanuele Di Giacomo <edigiacomo@arpae.it> - 3.2.16-2
+- cgicc-doc package
+
 * Tue Oct 11 2016 Emanuele Di Giacomo <emanuele.digiacomo@gmail.com> - 3.2.16-1
 - Relase 3.2.16
