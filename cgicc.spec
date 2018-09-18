@@ -49,7 +49,8 @@ developing applications that use %{name}.
 rm -rf $RPM_BUILD_ROOT
 %make_install
 find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
-mv $RPM_BUILD_ROOT/usr/doc $RPM_BUILD_ROOT/usr/share/doc
+mkdir -p $RPM_BUILD_ROOT/usr/share/doc/%{name}
+mv $RPM_BUILD_ROOT/usr/doc/%{name}-%{version} $RPM_BUILD_ROOT/usr/share/doc/%{name}/html
 
 
 %post -p /sbin/ldconfig
