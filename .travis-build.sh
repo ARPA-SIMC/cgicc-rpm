@@ -36,7 +36,6 @@ then
     pkgname="$(rpmspec -q --qf="cgicc-%{version}-%{release}\n" cgicc.spec | head -n1)"
     mkdir -p ~/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
     cp cgicc.spec ~/rpmbuild/SPECS/
-    cp *.patch ~/rpmbuild/SOURCES/
     spectool -g -R -S ~/rpmbuild/SPECS/cgicc.spec
     set +x
     rpmbuild -ba ~/rpmbuild/SPECS/cgicc.spec 2>&1 | pv -q -L 3k
