@@ -1,6 +1,6 @@
 Name:           cgicc
-Version:        3.2.16
-Release:        2%{?dist}
+Version:        3.2.11
+Release:        1%{?dist}
 Summary:        ANSI C++ library for CGI applications
 
 License:        LGPL
@@ -81,8 +81,5 @@ mv $RPM_BUILD_ROOT/usr/doc/%{name}-%{version} $RPM_BUILD_ROOT/usr/share/doc/%{na
 %{_docdir}/*
 
 %changelog
-* Tue Sep 18 2018 Emanuele Di Giacomo <edigiacomo@arpae.it> - 3.2.16-2
-- cgicc-doc package
-
-* Tue Oct 11 2016 Emanuele Di Giacomo <emanuele.digiacomo@gmail.com> - 3.2.16-1
-- Relase 3.2.16
+* Wed Sep 26 2018 Daniele Branchini <dbranchini@arpae.it> - 3.2.11-1
+- Release 3.2.11
