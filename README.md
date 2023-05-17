@@ -1,7 +1,8 @@
 [![Build Status](https://simc.arpae.it/moncic-ci/cgicc-rpm/centos7.png)](https://simc.arpae.it/moncic-ci/cgicc-rpm/)
-[![Build Status](https://simc.arpae.it/moncic-ci/cgicc-rpm/centos8.png)](https://simc.arpae.it/moncic-ci/cgicc-rpm/)
-[![Build Status](https://simc.arpae.it/moncic-ci/cgicc-rpm/fedora34.png)](https://simc.arpae.it/moncic-ci/cgicc-rpm/)
+[![Build Status](https://simc.arpae.it/moncic-ci/cgicc-rpm/rocky8.png)](https://simc.arpae.it/moncic-ci/cgicc-rpm/)
+[![Build Status](https://simc.arpae.it/moncic-ci/cgicc-rpm/rocky9.png)](https://simc.arpae.it/moncic-ci/cgicc-rpm/)
 [![Build Status](https://simc.arpae.it/moncic-ci/cgicc-rpm/fedora36.png)](https://simc.arpae.it/moncic-ci/cgicc-rpm/)
+[![Build Status](https://simc.arpae.it/moncic-ci/cgicc-rpm/fedora38.png)](https://simc.arpae.it/moncic-ci/cgicc-rpm/)
 [![Build Status](https://copr.fedorainfracloud.org/coprs/simc/stable/package/cgicc/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/simc/stable/package/cgicc/)
 
 # rpm packaging files for cgicc
